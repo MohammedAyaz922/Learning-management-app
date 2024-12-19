@@ -7,5 +7,5 @@ const express_1 = __importDefault(require("express"));
 const courseController_1 = require("../controllers/courseController");
 const router = express_1.default.Router();
 router.get("/", courseController_1.listCourses);
-router.get("/: courseId", courseController_1.getCourse);
+router.get("/:courseId", courseController_1.getCourse);
 exports.default = router;
