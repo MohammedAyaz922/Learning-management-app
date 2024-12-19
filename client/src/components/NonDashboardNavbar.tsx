@@ -19,7 +19,7 @@ const NonDashboardNavbar = () => {
             <BookOpen className="nondashboard-navbar__search-icon" size={18} />
           </div>
         </div>
-        </div>
+  
       </div>
       <div className="nondashboard-navbar__actions">
         <button className="nondashboard-navbar__notification-button">
@@ -27,6 +27,7 @@ const NonDashboardNavbar = () => {
           <Bell className="nondashboard-navbar__notification-icon"/>
         </button>
         {/* {sign in Buttons} */}
+      </div>
       </div>
     </nav>
   );

@@ -28,7 +28,7 @@ if (!isProduction) {
 
     app.use("/courses", courseRoutes)
    /* SERVER */
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8001;
 if (!isProduction) {
 app.listen(port, () => {
 console.log(`Server running on port ${port}`);
