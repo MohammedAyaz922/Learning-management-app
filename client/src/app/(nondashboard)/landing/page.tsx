@@ -57,8 +57,7 @@ const Landing = () => {
   const handleCourseClick = (courseId:string)=>{
     router.push(`/search?id=${courseId}`)
   }
-  console.log("courses:",  courses)
-
+ 
   if (isLoading) return <LoadingSkeleton/>
   return (
     <motion.div

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
-    console.log("Logging children",children)
+  
   return (
     <div className="auth-layout">
       <main className="auth-layout__main">{children}</main>
