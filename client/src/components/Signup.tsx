@@ -11,10 +11,10 @@ const SignUpComponent = () => {
   const isCheckoutPage = searchParams.get("showSignUp") !== null;
   const courseId = searchParams.get("id");
 
-  const signUpUrl = isCheckoutPage
-    ? `/checkout?step=1&id=${courseId}&showSignUp=true`
-    : "/signup";
-
+  const signInUrl = isCheckoutPage
+  ? `/checkout?step=1&id=${courseId}&showSignUp=false`
+  : "/signin";
+    
   const getRedirectUrl = () => {
     if (isCheckoutPage) {
       return `/checkout?step=2&id=${courseId}&showSignUp=true`;
@@ -49,7 +49,7 @@ const SignUpComponent = () => {
           footerActionLink: "text-primary-750 hover:text-primary-600",
         },
       }}
-      signUpUrl={signUpUrl}
+      signInUrl={signInUrl}
       forceRedirectUrl={getRedirectUrl()}
       routing="hash"
       afterSignOutUrl="/"
