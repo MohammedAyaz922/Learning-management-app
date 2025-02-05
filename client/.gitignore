@@ -53,8 +53,7 @@ next-env.d.ts
 
 # See https://help.github.com/articles/ignoring-files/ for more details.
 
-# Ignore all .d.ts files (TypeScript declaration files)
-*.d.ts
+
 
 # Ignore dist folder (build output)
 **/dist/

@@ -19,7 +19,7 @@ import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { v4 as uuidv4 } from "uuid";
-import type { Chapter } from "@/types/index";
+
 
 const ChapterModal = () => {
   const dispatch = useAppDispatch();
